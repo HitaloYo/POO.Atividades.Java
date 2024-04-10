@@ -22,14 +22,13 @@ public class Triangulo extends Figura {
     public double getAltura(){
         return this.altura;
     }
-    public double area(double base, double altura){
+    public double areaT(double base, double altura){
         return (base*altura)/2;
     }
-    @Override
     public String toString() {
         String dados = "A base do Triangulo é: " + this.base;
-        dados += "A altura do triangulo é: " + this.altura;
-        dados += "A area é: " + area(this.base, this.altura);
+        dados += "\nA altura do triangulo é: " + this.altura;
+        dados += "\nA area é: " + areaT(this.base, this.altura);
         return dados;
     }
 }

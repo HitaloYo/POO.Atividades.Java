@@ -26,13 +26,13 @@ public class Retangulo extends Figura {
         return this.lado2;
     }
     //Metodos Funções
-    public double area(double lado1, double lado2){
-        return lado1 * lado2;
+    public double areaR(){
+        return this.lado1 * this.lado2;
     }
     public String toString(){
         String dados = "A Base do retangulo é: " + this.lado1;
         dados += "\nA altura do retangulo é: " + this.lado2;
-        dados += "\nA area do retangulo é: " + area(this.lado1, this.lado2) ;
+        dados += "\nA area do retangulo é: " + areaR() ;
         return dados;
     }
 }
