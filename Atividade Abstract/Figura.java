@@ -1,4 +1,4 @@
-public class Figura {
+public abstract class Figura {
     /*Atributos -> protected porque na herança private não pode ser acessado pelas classes filhas, por tanto 
     protected é uma opção ideal para proteger atributos que não quero que sejam modificados diretamente*/
     protected String cor;

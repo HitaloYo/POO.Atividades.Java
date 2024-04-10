@@ -4,7 +4,7 @@ public class Retangulo extends Figura {
     private double lado2;
 
     //Construtor
-    public Retangulo(double lado1, double lado2, String cor){
+    Retangulo(double lado1, double lado2, String cor){
     this.lado1 = lado1;
     this.lado2 = lado2;
     this.cor = cor;
@@ -26,8 +26,8 @@ public class Retangulo extends Figura {
         return this.lado2;
     }
     //Metodos Funções
-    public double area(double base, double altura){
-        return base * altura;
+    public double area(double lado1, double lado2){
+        return lado1 * lado2;
     }
     public String toString(){
         String dados = "A Base do retangulo é: " + this.lado1;
