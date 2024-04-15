@@ -1,7 +1,7 @@
 public class Retangulo extends Figura {
     //Atributos
-    private double lado1;
-    private double lado2;
+    protected double lado1;
+    protected double lado2;
 
     //Construtor
     Retangulo(double lado1, double lado2, String cor){
@@ -26,13 +26,13 @@ public class Retangulo extends Figura {
         return this.lado2;
     }
     //Metodos Funções
-    public double areaR(){
+    public double area(){
         return this.lado1 * this.lado2;
     }
     public String toString(){
         String dados = "A Base do retangulo é: " + this.lado1;
         dados += "\nA altura do retangulo é: " + this.lado2;
-        dados += "\nA area do retangulo é: " + areaR() ;
+        dados += "\nA area do retangulo é: " + area() ;
         return dados;
     }
 }
